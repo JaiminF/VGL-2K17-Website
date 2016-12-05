@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+  var angle = 0;
+function galleryspin(sign) {
+spinner = document.querySelector("#spinner");
+if (!sign) { angle = angle + 60; } else { angle = angle - 60; }
+spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-transform: rotateY("+ angle +"deg); transform: rotateY("+ angle +"deg);");
+}
+  </script>
+  <style>
+  div#carousel {
+  perspective: 1200px;
+  background: #ffffff;
+  padding-top: 10%;
+  font-size:0;
+  margin-bottom: 0;
+  overflow:hidden;
+}
+figure#spinner {
+  transform-style: preserve-3d;
+  height: 420px;
+  transform-origin: 50% 50% -500px;
+  transition: 1s;
+}
+figure#spinner img {
+  height: 100%;
+  width: 90%; max-width: 480px;
+  position: absolute; left: 30%;
+  transform-origin: 50% 50% -500px;
+  outline:1px solid transparent;
+}
+figure#spinner img:nth-child(1) { transform:rotateY(0deg);
+}
+figure#spinner img:nth-child(2) { transform: rotateY(-60deg); }
+figure#spinner img:nth-child(3) { transform: rotateY(-120deg); }
+figure#spinner img:nth-child(4) { transform: rotateY(-180deg); }
+figure#spinner img:nth-child(5){ transform: rotateY(-240deg); }
+figure#spinner img:nth-child(6){ transform: rotateY(-300deg); }
+
+div#carousel ~ span {
+  color: #000000;
+  margin: 5%;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  transition: 0.6s color;
+  position: relative;
+  margin-top: -6rem;
+  border-bottom: none;
+  line-height: 0; }
+  div#carousel ~ span:hover { color: #888; cursor: pointer; }
+
+  </style>
+</head>
+<body>
+  <base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/wanaka-tree.jpg">
+  <div id="carousel">
+    <figure id="spinner">
+      <img src="C:\Users\BHAVYA SINGH\Desktop\New folder\imgs/img1.png">
+      <img src="C:\Users\BHAVYA SINGH\Desktop\New folder\imgs/img2.png">
+      <img src="C:\Users\BHAVYA SINGH\Desktop\New folder\imgs/img3.png">
+      <img src="C:\Users\BHAVYA SINGH\Desktop\New folder\imgs/img4.png">
+      <img src="C:\Users\BHAVYA SINGH\Desktop\New folder\imgs/img5.png">
+      <img src="C:\Users\BHAVYA SINGH\Desktop\New folder\imgs/img6.png">
+
+    </figure>
+  </div>
+  <span style="float:left" class="ss-icon" onclick="galleryspin('-')">&lt;</span>
+<span style="float:right" class="ss-icon" onclick="galleryspin('')">&gt;</span>
+
+
+</body>
+</html>
