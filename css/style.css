@@ -24,7 +24,7 @@ body {
 a {
   color: #acb7c0;
   text-decoration: none;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto";
 }
 
 img {
@@ -32,7 +32,7 @@ img {
 }
 
 h1, h2 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto";
   font-weight: bold;
 }
 
