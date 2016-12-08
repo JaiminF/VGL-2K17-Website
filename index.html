@@ -9,6 +9,13 @@
   <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
   <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
   <script src="js/modernizr.js"></script> <!-- Modernizr -->
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+  <!-- Google Fonts  -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'> <!-- Body font -->
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'> <!-- Navbar font -->
   <link href="css/jquery.classycountdown.css" rel="stylesheet" type="text/css">
   <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
@@ -25,6 +32,8 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media-queries.css">
     <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/smooth.js"></script>
+    <script src="js/smoothscroll.js"></script>
 <style>
 html {
   height: 100%;
@@ -135,9 +144,24 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
 </head>
 
 <body>
-  
-<section id="home" style="height: 700px">
-      <div id="countdown9" style="padding-top: 25%" class="ClassyCountdownDemo"></div>
+
+  <nav>
+    <div style="background-color: #212121" class="nav-wrapper">
+      <a href="#" class="brand-logo"><img src="imgs/taglogo.png" style="width:110px; height: 65px;margin-left:20px; padding-top: 2px;"></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down" style="margin-right: 10px">
+        <li><a style="font-size: 15px" id="HomePointer" href="#home">HOME</a></li>
+        <li><a style="font-size: 15px" id="HistoryPointer" href="#cd-timeline">HISTORY</a></li>
+        <li><a style="font-size: 15px" id="GamePointer" href="#carousel">GAMES</a></li>
+        <li><a style="font-size: 15px" id="ContactPointer" href="#facts">CONTACT US</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<section id="home" style="height: 700px; text-align: center">
+      <div style="padding-top: 10%">
+        <h1 style="color: white; font-size: 60px; font-family: Roboto"><b>VGL starts in...</b></h1>
+      </div>
+      <div id="countdown9" style="padding-top: 5%; padding-left: 10%; padding-right:10%" class="ClassyCountdownDemo"></div>
 </section>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="js/jquery.knob.js"></script>
@@ -212,18 +236,22 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
 
 </script>
 
-<section style="width: 100%" id="cd-timeline" class="cd-container">
+<section style="width: 100%; background-color: #212121" id="cd-timeline" class="cd-container">
+  <div style="style="text-align: center"">
+    <h1 style="color: white">TAG's history</h1>
+  </div>
   <div class="cd-timeline-block">
     <div class="cd-timeline-img cd-picture">
       <img src="imgs/application.svg" alt="Picture">
     </div> <!-- cd-timeline-img -->
 
+
     <div class="cd-timeline-content">
-      <h1><b>Game-A-Thon 2K13</b></h1>
+      <h1>Game-A-Thon 2K13</h1>
       <p style="font-size: 16px">We began our journey with a prize pool of 80k in graVITas and 50k in riviera. We had total 400 participants
          in graVITas and 250 in Riviera.</p>
 
-      <span class="cd-date"><b><h3>2013</h3></b></span>
+      <span class="cd-date"><h3>2013</h3></span>
     </div> <!-- cd-timeline-content -->
   </div> <!-- cd-timeline-block -->
 
@@ -233,11 +261,11 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
     </div> <!-- cd-timeline-img -->
 
     <div class="cd-timeline-content">
-      <h1><b>Game-A-Thon 2K14</b></h1>
+      <h1>Game-A-Thon 2K14</h1>
       <p style="font-size: 16px">Our second session of events saw 760 participants in graVITas and 420 in Riviera with a prize pool of 1.8
         lakhs and 1.2 lakhs respectively.</p>
 
-      <span class="cd-date"><b><h3>2014</h3></b></span>
+      <span class="cd-date"><h3>2014</h3></span>
     </div> <!-- cd-timeline-content -->
   </div> <!-- cd-timeline-block -->
 
@@ -247,11 +275,11 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
     </div> <!-- cd-timeline-img -->
 
     <div class="cd-timeline-content">
-      <h1><b>Game-A-Thon 2K15</b></h1>
+      <h1>Game-A-Thon 2K15</h1>
       <p style="font-size: 16px">We had 800 participants Riviera 2015 with a prize pool of 2 Lakhs. We raised the bars in graVITas 2015
       by giving giveaways so no one went home unhappy with a prize pool of 2 lakhs.</p>
 
-        <span class="cd-date"><b><h3>2015</h3></b></span>
+        <span class="cd-date"><h3>2015</h3></span>
     </div> <!-- cd-timeline-content -->
   </div> <!-- cd-timeline-block -->
 
@@ -261,11 +289,11 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
     </div> <!-- cd-timeline-img -->
 
     <div class="cd-timeline-content">
-      <h1><b>Game-A-Thon 2K16</b></h1>
+      <h1>Game-A-Thon 2K16</h1>
       <p style="font-size: 16px">This Riviera we organised VGL (VIT Gamer's League). It was only for the students of VIT and we had exclusive
       things. Over 500 participants and a prize pool of 1.2 Lakhs. Over a 1000 participants played in graVITas '16 with a prize pool of 2 lakhs.</p>
 
-        <span class="cd-date"><b><h3>2016</h3></b></span>
+        <span class="cd-date"><h3>2016</h3></span>
     </div> <!-- cd-timeline-content -->
   </div> <!-- cd-timeline-block -->
 
@@ -375,10 +403,68 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
     </div>
 
 
-
   </section>
+  <footer class="page-footer" style="background-color: #eceff1; font-size: 15px; margin-top:-10px">
+            <div class="container">
+
+            <div class="">
+              <div class="container center" style="color: black; padding-bottom: 20px;">
+               &copy Copyright Technology &amp; Gaming Club, VIT Vellore
+              </div>
+            </div>
+  </footer>
+
+  <!--Import jQuery before materialize.js-->
+          <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+          <!-- Compiled and minified JavaScript -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+          <!--Materializecss Slider-->
+          <script>
+              $(document).ready(function () {
+                  $('.slider').slider({full_width: true});
+              });
+          </script>
 
 
+          <script type="text/javascript">
+          $('#HomePointer').on('click', function() {
+            $.smoothScroll({
+              scrollElement: $('body'),
+              scrollTarget: '#home'
+            });
+            return false;
+          });
+          </script>
+
+          <script type="text/javascript">
+          $('#HistoryPointer').on('click', function() {
+            $.smoothScroll({
+              scrollElement: $('body'),
+              scrollTarget: '#cd-timeline'
+            });
+            return false;
+          });
+          </script>
+
+    <script type="text/javascript">
+    $('#GamePointer').on('click', function() {
+    	$.smoothScroll({
+    		scrollElement: $('body'),
+    		scrollTarget: '#carousel'
+    	});
+    	return false;
+    });
+    </script>
+
+    <script type="text/javascript">
+    $('#ContactPointer').on('click', function() {
+    	$.smoothScroll({
+    		scrollElement: $('body'),
+    		scrollTarget: '#facts'
+    	});
+    	return false;
+    });
+    </script>
 
 
 
