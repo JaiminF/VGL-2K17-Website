@@ -34,7 +34,7 @@ html {
 	background-size: cover;
 }
 
-body {
+body{
   height: 100%;
 	background-color: rgba(44,62,80 , 0.6 );
 	background-image: url('imgs/pattern.png');
@@ -42,6 +42,7 @@ body {
 	background-repeat: repeat;
 	font-family: 'Roboto';
 }
+
 
 </style>
 <script>
@@ -126,11 +127,15 @@ border-bottom: none;
 line-height: 0; }
 div#carousel ~ span:hover { color: #888; cursor: pointer; }
 
+#cd-timeline{
+  margin-top: 50px;
+}
+
 </style>
 </head>
 
 <body>
-
+  
 <section id="home" style="height: 700px">
       <div id="countdown9" style="padding-top: 25%" class="ClassyCountdownDemo"></div>
 </section>
@@ -143,8 +148,8 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
 
 
                                           $('#countdown9').ClassyCountdown({
-                                                end: '1388468325',
-                                                now: '1380501323',
+                                                end: '1486265400',
+                                                now: $.now()/1000,
                                                 labels: true,
                                                 style: {
                                                     element: "",
@@ -207,17 +212,18 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
 
 </script>
 
-<section id="cd-timeline" class="cd-container">
+<section style="width: 100%" id="cd-timeline" class="cd-container">
   <div class="cd-timeline-block">
     <div class="cd-timeline-img cd-picture">
       <img src="imgs/application.svg" alt="Picture">
     </div> <!-- cd-timeline-img -->
 
     <div class="cd-timeline-content">
-      <h2>Title of section 1</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+      <h1><b>Game-A-Thon 2K13</b></h1>
+      <p style="font-size: 16px">We began our journey with a prize pool of 80k in graVITas and 50k in riviera. We had total 400 participants
+         in graVITas and 250 in Riviera.</p>
 
-      <span class="cd-date">Jan 14</span>
+      <span class="cd-date"><b><h3>2013</h3></b></span>
     </div> <!-- cd-timeline-content -->
   </div> <!-- cd-timeline-block -->
 
@@ -227,10 +233,11 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
     </div> <!-- cd-timeline-img -->
 
     <div class="cd-timeline-content">
-      <h2>Title of section 2</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+      <h1><b>Game-A-Thon 2K14</b></h1>
+      <p style="font-size: 16px">Our second session of events saw 760 participants in graVITas and 420 in Riviera with a prize pool of 1.8
+        lakhs and 1.2 lakhs respectively.</p>
 
-      <span class="cd-date">Jan 18</span>
+      <span class="cd-date"><b><h3>2014</h3></b></span>
     </div> <!-- cd-timeline-content -->
   </div> <!-- cd-timeline-block -->
 
@@ -240,10 +247,11 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
     </div> <!-- cd-timeline-img -->
 
     <div class="cd-timeline-content">
-      <h2>Title of section 3</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
+      <h1><b>Game-A-Thon 2K15</b></h1>
+      <p style="font-size: 16px">We had 800 participants Riviera 2015 with a prize pool of 2 Lakhs. We raised the bars in graVITas 2015
+      by giving giveaways so no one went home unhappy with a prize pool of 2 lakhs.</p>
 
-
+        <span class="cd-date"><b><h3>2015</h3></b></span>
     </div> <!-- cd-timeline-content -->
   </div> <!-- cd-timeline-block -->
 
@@ -253,37 +261,14 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
     </div> <!-- cd-timeline-img -->
 
     <div class="cd-timeline-content">
-      <h2>Title of section 4</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+      <h1><b>Game-A-Thon 2K16</b></h1>
+      <p style="font-size: 16px">This Riviera we organised VGL (VIT Gamer's League). It was only for the students of VIT and we had exclusive
+      things. Over 500 participants and a prize pool of 1.2 Lakhs. Over a 1000 participants played in graVITas '16 with a prize pool of 2 lakhs.</p>
 
-
+        <span class="cd-date"><b><h3>2016</h3></b></span>
     </div> <!-- cd-timeline-content -->
   </div> <!-- cd-timeline-block -->
 
-  <div class="cd-timeline-block">
-    <div class="cd-timeline-img cd-location">
-      <img src="imgs/application.svg" alt="Picture">
-    </div> <!-- cd-timeline-img -->
-
-    <div class="cd-timeline-content">
-      <h2>Title of section 5</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
-
-      <span class="cd-date">Feb 18</span>
-    </div> <!-- cd-timeline-content -->
-  </div> <!-- cd-timeline-block -->
-
-  <div class="cd-timeline-block">
-    <div class="cd-timeline-img cd-movie">
-      <img src="imgs/application.svg" alt="Picture">
-    </div> <!-- cd-timeline-img -->
-
-    <div class="cd-timeline-content">
-      <h2>Final Section</h2>
-      <p>This is the content of the last section</p>
-      <span class="cd-date">Feb 26</span>
-    </div> <!-- cd-timeline-content -->
-  </div> <!-- cd-timeline-block -->
 </section> <!-- cd-timeline -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
