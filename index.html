@@ -32,22 +32,21 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media-queries.css">
     <script src="js/modernizr-2.6.2.min.js"></script>
-    <script src="js/smooth.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script type="text/javascript" src="js/scroll.js"></script>
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-    <!-- Script for Smooth scrolling-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/smooth.js"></script>
+    <!-- Script for Smooth scrolling-->
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
 
 <style>
 html {
@@ -65,6 +64,9 @@ body{
 	background-position: center;
 	background-repeat: repeat;
 	font-family: 'Roboto';
+}
+.link:hover{
+  color: white;
 }
 </style>
 
@@ -276,10 +278,10 @@ div#carousel ~ span:hover { color: #fff; cursor: pointer; }
     <div style="background-color: #212121" class="nav-wrapper">
       <a href="#" class="brand-logo"><img src="imgs/taglogo.png" style="width:110px; height: 65px;margin-left:20px; padding-top: 2px;"></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down" style="margin-right: 10px">
-        <li><a style="font-size: 15px" id="HomePointer" href="#home">HOME</a></li>
-        <li><a style="font-size: 15px" id="HistoryPointer" href="#cd-timeline">HISTORY</a></li>
-        <li><a style="font-size: 15px" id="GamePointer" href="#carousel">GAMES</a></li>
-        <li><a style="font-size: 15px" id="ContactPointer" href="#facts">CONTACT US</a></li>
+        <li><a class="link" style="font-size: 15px" id="HomePointer" href="#home">HOME</a></li>
+        <li><a class="link" style="font-size: 15px" id="HistoryPointer" href="#cd-timeline">HISTORY</a></li>
+        <li><a class="link" style="font-size: 15px" id="GamePointer" href="#carousel">GAMES</a></li>
+        <li><a class="link" style="font-size: 15px" id="ContactPointer" href="#facts">CONTACT US</a></li>
       </ul>
     </div>
   </nav>
